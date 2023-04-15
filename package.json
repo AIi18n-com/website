@@ -1,5 +1,5 @@
 {
-  "name": "nextra-docs-template",
+  "name": "AIi18n website",
   "version": "0.0.1",
   "description": "Nextra docs template",
   "scripts": {
@@ -9,14 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/AIi18n-com/website.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "johannlai",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
-  },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "framer-motion": "^10.12.2",
     "next": "^13.0.6",
