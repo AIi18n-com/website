@@ -1,22 +1,18 @@
 {
   "index": {
     "type": "page",
-    "title": "Nextra",
+    "title": "AI i18n",
     "display": "hidden",
     "theme": {
       "layout": "raw"
     }
   },
-  "features": {
+  "docs": {
     "type": "page",
-    "title": "Features"
+    "title": "Documentation"
   },
   "pricing": {
     "type": "page",
     "title": "Pricing"
-  },
-  "docs": {
-    "type": "page",
-    "title": "Documentation"
   }
 }

@@ -1,85 +1,102 @@
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  color: #333333;
 }
 
 .description {
   font-size: 1.25rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  color: #666666;
 }
 
 .plans {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 3rem;
+  margin-bottom: 4rem;
 }
 
 .plan {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 2rem;
-  width: 300px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2.5rem;
+  flex-shrink: 0;
+  width: 320px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s;
 }
 
 .plan:hover {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
   transform: translateY(-5px);
 }
 
 .planTitle {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: #333333;
 }
 
 .planDescription {
   font-size: 1rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: #666666;
 }
 
 .planFeatures {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .planFeatures li {
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
   text-align: center;
   color: #4a4a4a;
 }
-
 .planButton {
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
   background-color: #3f51b5;
   border: none;
-  border-radius: 4px;
-  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
   cursor: pointer;
   display: inline-block;
   text-align: center;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .planButton:hover {
   background-color: #283593;
+  transform: translateY(-3px);
+}
+
+.highlightedFeature {
+  font-weight: bold;
+  color: #3f51b5;
+}
+
+.disabledFeature {
+  text-decoration: line-through;
+  color: #bdbdbd;
 }
