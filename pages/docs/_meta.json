@@ -3,11 +3,11 @@
   "quick-start": "Quick Start",
   "-- Themes": {
     "type": "separator",
-    "title": "Themes"
+    "title": "Integrations"
   },
-  "docs-theme": "",
-  "blog-theme": "",
-  "custom-theme": "",
+  "VitePress": "",
+  "VuePress": "",
+  "WordPress": "",
   "-- More": {
     "type": "separator",
     "title": "More"
