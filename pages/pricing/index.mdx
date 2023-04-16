@@ -1,0 +1,51 @@
+---
+title: Pricing - AI i18n - The AI Solution for Multilingual Website Localization powered by AI
+---
+
+
+import styles from "./index.module.css";
+
+export default function Pricing() {
+  return (
+    <>
+      <h1 className={styles.title}>产品定价</h1>
+      <p className={styles.description}>
+        欢迎来到我们产品的定价页面！我们提供了多种定价方案，以满足不同用户的需求。您可以从免费版、基础版和企业版中选择适合您的方案。我们的 UI 设计简洁高级，为您带来舒适的使用体验。
+      </p>
+      <div className={styles.plans}>
+        <div className={styles.plan}>
+          <h2 className={styles.planTitle}>免费版</h2>
+          <p className={styles.planDescription}>适合个人用户</p>
+          <ul className={styles.planFeatures}>
+            <li>基本功能</li>
+            <li>限制为每月 1000 次 API 调用</li>
+          </ul>
+          <button className={styles.planButton}>立即注册</button>
+        </div>
+
+        <div className={styles.plan}>
+          <h2 className={styles.planTitle}>基础版</h2>
+          <p className={styles.planDescription}>适合中小型企业</p>
+          <ul className={styles.planFeatures}>
+            <li>所有免费版功能</li>
+            <li>每月 10,000 次 API 调用</li>
+            <li>优先技术支持</li>
+          </ul>
+          <button className={styles.planButton}>购买 - ¥99/月</button>
+        </div>
+
+        <div className={styles.plan}>
+          <h2 className={styles.planTitle}>企业版</h2>
+          <p className={styles.planDescription}>适合大型企业</p>
+          <ul className={styles.planFeatures}>
+            <li>所有基础版功能</li>
+            <li>无限次 API 调用</li>
+            <li>专属客户经理</li>
+            <li>定制功能开发</li>
+          </ul>
+          <button className={styles.planButton}>联系我们</button>
+        </div>
+      </div>
+    </>
+  );
+}

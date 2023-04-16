@@ -7,6 +7,16 @@
       "layout": "raw"
     }
   },
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)"
+  "features": {
+    "type": "page",
+    "title": "Features"
+  },
+  "pricing": {
+    "type": "page",
+    "title": "Pricing"
+  },
+  "docs": {
+    "type": "page",
+    "title": "Documentation"
+  }
 }

@@ -1,0 +1,24 @@
+{
+  "index": "Introduction",
+  "guide": "",
+  "-- Themes": {
+    "type": "separator",
+    "title": "Themes"
+  },
+  "docs-theme": "",
+  "blog-theme": "",
+  "custom-theme": "",
+  "-- More": {
+    "type": "separator",
+    "title": "More"
+  },
+  "next.js-link": {
+    "title": "Try it now ↗",
+    "href": "https://app.aii18n.com",
+    "newWindow": true
+  },
+  "about-link": {
+    "title": "About AI i18n",
+    "href": "/about"
+  }
+}
