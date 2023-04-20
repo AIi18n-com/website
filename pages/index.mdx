@@ -40,23 +40,31 @@ export function Comparison({ a, b, invert, ...props }) {
 }
 
 <div className="home-content" style={{height: '100vh'}}>
-  <div className="content-container">
-    <h1 className="headline">AI Solution for<br className='sm:block hidden'/> Multilingual <br className='sm:block hidden'/>  Website Localization </h1>
-    <p className="subtitle">
+  <div className="banner-container">
+    <div className="content-container">
+      <h1 className="headline"><span className="headline-title">AI Solution</span> <br className='sm:block hidden'/> for Multilingual <br className='sm:block hidden'/>  Website Localization </h1>
+      <p className="subtitle">
+        <br className='sm:block hidden'/>
+        Go Global Fast with AIi18n<br />
+        Add Support for 100+ Languages in One Line of JS Code<br />
+      </p>
       <br className='sm:block hidden'/>
-      Go Global Fast with AIi18n<br />
-      Add Support for 100+ Languages in One Line of JS Code<br />
-    </p>
-    <br className='sm:block hidden'/>
-    <p className="subtitle">
-      <Link className={styles.cta} href="/docs">Get started <span>→</span></Link>
-    </p>
-    <img src="/3D-banner.png" alt="AIi18n" className="banner sm:block hidden'"/>
+      <p className="subtitle">
+        <Link className={styles.cta} href="/docs">Get started <span>→</span></Link>
+      </p>
+      <img src="/3d-banner-new-with-bg.png" alt="AIi18n" className="banner sm:block hidden'"/>
+      <img src="/3d-banner-new.png" alt="AIi18n" className="banner-top sm:block hidden'"/>
+      <img src="/3d-banner-new.png" alt="AIi18n" className="banner-middle sm:block hidden'"/>
+      <img src="/3d-banner-new.png" alt="AIi18n" className="banner-left sm:block hidden'"/>
+    </div>
   </div>
 
 {' '}
 
 <style jsx>{`
+  .banner-container {
+    width: 100%;
+  }
   .home-content {
     position: relative;
   }
@@ -89,7 +97,7 @@ export function Comparison({ a, b, invert, ...props }) {
   .headline {
     position: relative;
     display: inline-block;
-    font-size: 3.125rem;
+    font-size: 3.5rem;
     font-size: min(4.375rem, max(8vw, 2.5rem));
     font-weight: 700;
     font-feature-settings: initial;
@@ -103,6 +111,59 @@ export function Comparison({ a, b, invert, ...props }) {
     background-clip: text;
     z-index: 1;
   }
+  .headline-title {
+    width: 8em !important;
+    font-weight: 800 !important;
+    background: conic-gradient(
+      #ca4246 16.666%,
+      #e16541 16.666%,
+      #e16541 33.333%,
+      #f18f43 33.333%,
+      #f18f43 51%,
+      #8b9862 49%,
+      #8b9862 66.666%,
+      #476098 66.666%,
+      #476098 83.333%,
+      #a7489b 83.333%
+    );
+    background-size: 57%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+    cursor: pointer;
+  }
+  .headline-title:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+  }
+  @keyframes rainbow-text-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -1em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    to {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }
+  @keyframes rainbow-text-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    to {
+      background-size: 110%;
+      background-position: -18em 1em;
+    }
+  }
   :global(.dark) .headline {
     background-image: linear-gradient(146deg, #fff, #757a7d);
   }
@@ -114,18 +175,53 @@ export function Comparison({ a, b, invert, ...props }) {
   }
   .banner {
     position: absolute;
-    width: 32rem;
-    right: 5rem;
+    height: 105%;
+    right: 0rem;
     top: 3rem;
-    animation: breathe 3s ease-in-out infinite;
+    z-index: 0;
+    filter: blur(250px);
+  }
+  :global(.dark) .banner {
+    display: none;
+  }
+  .banner-top {
+    position: absolute;
+    height: 120%;
+    right: 2rem;
+    top: 0rem;
+    z-index: 0;
+    filter: blur(100px);
+  }
+  :global(.dark) .banner-top {
+    filter: blur(650px);
+  }
+  .banner-middle {
+    position: absolute;
+    height: 105%;
+    right: 4rem;
+    top: 1rem;
     z-index: 0;
   }
-  @keyframes breathe {
+  .banner-left {
+    position: absolute;
+    height: 105%;
+    left: -2rem;
+    top: 0rem;
+    z-index: -1;
+    filter: blur(180px);
+  }
+  .banner-top {
+    animation: float 1.5s ease-in-out infinite;
+  }
+  .banner-middle {
+    animation: float 1.5s ease-in-out infinite;
+  }
+  @keyframes float {
     0% {
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-1.5rem);
+      transform: translateY(-10px);
     }
     100% {
       transform: translateY(0);
@@ -262,8 +358,13 @@ export function Comparison({ a, b, invert, ...props }) {
     .banner {
       display: none;
     }
+    .banner-top {
+      display: none;
+    }
+    .banner-middle {
+      display: none;
+    }
     .content-container {
-      background-color: #fff;
       padding-left: max(env(safe-area-inset-left), 1.5rem);
       padding-right: max(env(safe-area-inset-right), 1.5rem);
       margin: 0 auto;
