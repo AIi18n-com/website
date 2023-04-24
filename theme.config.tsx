@@ -37,6 +37,9 @@ const logo = (
         mask-size: 400%;
         mask-position: 0%;
       }
+      img {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
       div:hover {
         mask-position: 100%;
         transition: mask-position 1s ease, -webkit-mask-position 1s ease;
