@@ -10,7 +10,7 @@ const logo = (
     }}
   >
     <img
-      src="/aii18n-logo.png"
+      src="/ai-logo.png"
       alt="AI i18n"
       style={{
         width: 30,
@@ -38,7 +38,12 @@ const logo = (
         mask-position: 0%;
       }
       img {
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.5));
+      }
+      @media (prefers-color-scheme: dark) {
+        img {
+          filter: invert(1);
+        }
       }
       div:hover {
         mask-position: 100%;
