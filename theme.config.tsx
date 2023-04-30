@@ -37,9 +37,6 @@ const logo = (
         mask-size: 400%;
         mask-position: 0%;
       }
-      img {
-        filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.5));
-      }
       @media (prefers-color-scheme: dark) {
         img {
           filter: invert(1);
